@@ -1,9 +1,9 @@
-# flutter_google_pay
+# apple_pay_flutter
 Accept Payments with Apple Pay.
 
 ## Usage
 ```dart
-  import 'package:flutter_apple_pay/flutter_apple_pay.dart';
+  import 'package:apple_pay_flutter/apple_pay_flutter.dart';
 
   Future<void> makePayment() async {
 
