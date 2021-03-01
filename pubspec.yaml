@@ -1,7 +1,7 @@
 name: apple_pay_flutter
 description: Apple Pay (payment and digital wallet service by Apple Inc) to Flutter.
 version: 0.0.2
-homepage: https://github.com/
+homepage: https://github.com/Concerto-hub/apple_pay_flutter
 
 
 environment:
