@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class ApplePayFlutter {
   static const MethodChannel _channel =
-      const MethodChannel('apple_pay_flutter');
+  const MethodChannel('apple_pay_flutter');
 
   static Future<dynamic> makePayment({
     @required String countryCode,
@@ -16,6 +16,8 @@ class ApplePayFlutter {
     @required List<PaymentItem> paymentItems,
     @required String customerName,
     @required String customerEmail,
+    @required String companyName,
+    @required double shippingCharges,
   }) async {
     // Assert checks for validating null references in the parameters
     assert(countryCode != null);
@@ -24,18 +26,22 @@ class ApplePayFlutter {
     assert(merchantIdentifier != null);
     assert(customerEmail != null);
     assert(customerName != null);
+    assert(companyName != null);
+    assert(shippingCharges != null);
 
     // Create a argument json to be send to ApplePlay swift function
     final Map<String, Object> args = <String, dynamic>{
       'paymentNetworks':
-          paymentNetworks.map((item) => item.toString().split('.')[1]).toList(),
+      paymentNetworks.map((item) => item.toString().split('.')[1]).toList(),
       'countryCode': countryCode,
       'currencyCode': currencyCode,
       'paymentItems':
-          paymentItems.map((PaymentItem item) => item._toMap()).toList(),
+      paymentItems.map((PaymentItem item) => item._toMap()).toList(),
       'merchantIdentifier': merchantIdentifier,
       'customerEmail': customerEmail,
       'customerName': customerName,
+      'companyName':companyName,
+      'shippingCharges':shippingCharges,
     };
 
     // Check if user is having real iOS device

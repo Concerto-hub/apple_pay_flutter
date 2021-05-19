@@ -43,11 +43,13 @@ class _MyAppState extends State<MyApp> {
         paymentItems: paymentItems,
         customerEmail: "demo.user@business.com",
         customerName: "Demo User",
+        companyName: "Concerto Soft",
+        shippingCharges: 2.00,
       );
 
       // This logs the Apple Pay response data
       print(applePaymentData.toString());
-      
+
     } on PlatformException {
       print('Failed payment');
     }
@@ -62,15 +64,15 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Waiting for Apple Pay modal.'),
-            RaisedButton(
-              child: Text('Call payment'),
-              onPressed: () => makePayment(),
-            )
-          ],
-        )),
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text('Waiting for Apple Pay modal.'),
+                RaisedButton(
+                  child: Text('Call payment'),
+                  onPressed: () => makePayment(),
+                )
+              ],
+            )),
       ),
     );
   }
