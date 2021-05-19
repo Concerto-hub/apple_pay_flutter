@@ -1,3 +1,5 @@
+## 0.0.4
+* Added company name and shipping charges
 ## 0.0.3
 
 * change readme.md.
