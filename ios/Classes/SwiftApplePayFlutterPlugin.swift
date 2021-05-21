@@ -29,7 +29,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         guard let paymentNeworks = arguments["paymentNetworks"] as? [String] else {return}
         guard let countryCode = arguments["countryCode"] as? String else {return}
         guard let currencyCode = arguments["currencyCode"] as? String else {return}
-
+        guard let companyName = arguments["companyName"] as? String else {return}
         guard let paymentItems = arguments["paymentItems"] as? [NSDictionary] else {return}
         guard let merchantIdentifier = arguments["merchantIdentifier"] as? String else {return}
         
