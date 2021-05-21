@@ -29,30 +29,32 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         guard let paymentNeworks = arguments["paymentNetworks"] as? [String] else {return}
         guard let countryCode = arguments["countryCode"] as? String else {return}
         guard let currencyCode = arguments["currencyCode"] as? String else {return}
-
+        guard let companyName = arguments["companyName"] as? String else {return}
         guard let paymentItems = arguments["paymentItems"] as? [NSDictionary] else {return}
         guard let merchantIdentifier = arguments["merchantIdentifier"] as? String else {return}
-        
+
         for dictionary in paymentItems {
             guard let label = dictionary["label"] as? String else {return}
             guard let price = dictionary["amount"] as? Double else {return}
+            guard let shippingcharge = dictionary["shippingcharge"] as? Double else {return}
             let type = PKPaymentSummaryItemType.final
             
-            totalPrice += price
-            
-            items.append(PKPaymentSummaryItem(label: label, amount: NSDecimalNumber(floatLiteral: price), type: type))
+            totalPrice = price+shippingcharge
+            items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingcharge), type: type))
+            items.append(PKPaymentSummaryItem(label: "SUBTOTAL", amount: NSDecimalNumber(floatLiteral: price), type: type))
+
         }
         
-        let total = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(floatLiteral:totalPrice), type: .final)
+        let total = PKPaymentSummaryItem(label: companyName , amount: NSDecimalNumber(floatLiteral:totalPrice), type: .final)
         items.append(total)
         
         paymentNeworks.forEach {
             
-            guard let paymentType = PaymentSystem(rawValue: $0) else {
+            guard let paymentType = PaymentSystem(rawValue: $0) else
+            {
                 assertionFailure("No payment type found")
                 return
             }
-            
             payments.append(paymentType.paymentNetwork)
         }
         
@@ -214,13 +216,16 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
             guard let label = dictionary["label"] as? String else {return nil}
             guard let amount = dictionary["amount"] as? NSDecimalNumber else {return nil}
             guard let type = dictionary["type"] as? PKPaymentSummaryItemType else {return nil}
-            
-            totalPrice += amount.decimalValue
-            
-            items.append(PKPaymentSummaryItem(label: label, amount: amount, type: type))
+            guard let shippingcharge = dictionary["shippingcharge"] as? NSDecimalNumber else {return nil}
+
+            totalPrice = amount.decimalValue + shippingcharge.decimalValue
+
+
+            items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: shippingcharge, type: type))
+            items.append(PKPaymentSummaryItem(label: "SUBTOTAL", amount: amount, type: type))
         }
         
-        let total = PKPaymentSummaryItem(label: "Total", amount: NSDecimalNumber(decimal:totalPrice), type: .final)
+        let total = PKPaymentSummaryItem(label: "ABC 000", amount: NSDecimalNumber(decimal:totalPrice), type: .final)
         items.append(total)
         print(items)
         return items

@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
 
     // List of items with label & price
     List<PaymentItem> paymentItems = [
-      PaymentItem(label: 'Label', amount: 1.00)
+      PaymentItem(label: 'Label', amount: 1.00,shippingcharge: 2.00)
     ];
 
     try {
@@ -43,6 +43,8 @@ class _MyAppState extends State<MyApp> {
         paymentItems: paymentItems,
         customerEmail: "demo.user@business.com",
         customerName: "Demo User",
+        companyName: "Concerto Soft",
+
       );
 
       // This logs the Apple Pay response data
