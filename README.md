@@ -12,7 +12,7 @@ Accept Payments with Apple Pay.
 
     // List of items with label & price
     List<PaymentItem> paymentItems = [
-      PaymentItem(label: 'Label', amount: 1.00)
+      PaymentItem(label: 'Label', amount: 1.00,shippingcharge: 2.00)
     ];
 
     try {
@@ -31,7 +31,7 @@ Accept Payments with Apple Pay.
             customerEmail: "demo.user@business.com",
             customerName: "Demo User",
             companyName: "Demo Company",
-            shippingCharges: 2.00,
+        
         );
 
         // This logs the Apple Pay response data
