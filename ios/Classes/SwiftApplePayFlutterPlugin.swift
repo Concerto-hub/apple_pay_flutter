@@ -29,10 +29,10 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         guard let paymentNeworks = arguments["paymentNetworks"] as? [String] else {return}
         guard let countryCode = arguments["countryCode"] as? String else {return}
         guard let currencyCode = arguments["currencyCode"] as? String else {return}
-        guard let companyName = arguments["companyName"] as? String else {return}
+
         guard let paymentItems = arguments["paymentItems"] as? [NSDictionary] else {return}
         guard let merchantIdentifier = arguments["merchantIdentifier"] as? String else {return}
-
+        
         for dictionary in paymentItems {
             guard let label = dictionary["label"] as? String else {return}
             guard let price = dictionary["amount"] as? Double else {return}
@@ -49,12 +49,13 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         items.append(total)
         
         paymentNeworks.forEach {
-            
+
             guard let paymentType = PaymentSystem(rawValue: $0) else
             {
                 assertionFailure("No payment type found")
                 return
             }
+            
             payments.append(paymentType.paymentNetwork)
         }
         

@@ -32,7 +32,7 @@ class ApplePayFlutter {
     // Create a argument json to be send to ApplePlay swift function
     final Map<String, Object> args = <String, dynamic>{
       'paymentNetworks':
-          paymentNetworks.map((item) => item.toString().split('.')[1]).toList(),
+      paymentNetworks.map((item) => item.toString().split('.')[1]).toList(),
       'countryCode': countryCode,
       'currencyCode': currencyCode,
       'paymentItems':

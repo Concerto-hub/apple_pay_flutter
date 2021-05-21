@@ -30,6 +30,8 @@ Accept Payments with Apple Pay.
             paymentItems: paymentItems,
             customerEmail: "demo.user@business.com",
             customerName: "Demo User",
+            companyName: "Demo Company",
+            shippingCharges: 2.00,
         );
 
         // This logs the Apple Pay response data
