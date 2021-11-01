@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="CompanyName Changes for appstore upload">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apple_pay_flutter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apple_pay_flutter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftApplePayFlutterPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftApplePayFlutterPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/apple_pay_flutter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/apple_pay_flutter.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/Amit/.android/avd/Pixel_3_API_29.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -34,16 +34,19 @@
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,47 +65,69 @@
       <option name="project" value="LOCAL" />
       <updated>1621421128674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CompanyName Changes for appstore upload">
+      <created>1621422035219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621422035219</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CompanyName Changes for appstore upload">
+      <created>1621422049675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621422049675</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes in Documentation for publish">
+      <created>1621423059200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621423059200</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CompanyName Changes for appstore upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="CompanyName Changes for appstore upload" />
+    <MESSAGE value="Changes in Documentation for publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in Documentation for publish" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="268" y="30" key="CommitChangelistDialog2" timestamp="1621422035068">
+    <state x="268" y="30" key="CommitChangelistDialog2" timestamp="1621423059058">
       <screen x="0" y="23" width="1600" height="802" />
     </state>
     <state x="268" y="52" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1621420670613" />
-    <state x="268" y="30" key="CommitChangelistDialog2/0.23.1600.802@0.23.1600.802" timestamp="1621422035068" />
-    <state width="1558" height="211" key="GridCell.Tab.0.bottom" timestamp="1621421743097">
-      <screen x="0" y="23" width="1600" height="802" />
+    <state x="268" y="30" key="CommitChangelistDialog2/0.23.1600.802@0.23.1600.802" timestamp="1621423059058" />
+    <state width="1231" height="211" key="GridCell.Tab.0.bottom" timestamp="1621442746624">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="243" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1621420950335" />
-    <state width="1558" height="211" key="GridCell.Tab.0.bottom/0.23.1600.802@0.23.1600.802" timestamp="1621421743097" />
-    <state width="1558" height="211" key="GridCell.Tab.0.center" timestamp="1621421743097">
-      <screen x="0" y="23" width="1600" height="802" />
+    <state width="1231" height="211" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1621442746624" />
+    <state width="1231" height="211" key="GridCell.Tab.0.bottom/0.23.1600.802@0.23.1600.802" timestamp="1621422357738" />
+    <state width="1231" height="211" key="GridCell.Tab.0.center" timestamp="1621442746623">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="243" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1621420950333" />
-    <state width="1558" height="211" key="GridCell.Tab.0.center/0.23.1600.802@0.23.1600.802" timestamp="1621421743097" />
-    <state width="1558" height="211" key="GridCell.Tab.0.left" timestamp="1621421743096">
-      <screen x="0" y="23" width="1600" height="802" />
+    <state width="1231" height="211" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1621442746623" />
+    <state width="1231" height="211" key="GridCell.Tab.0.center/0.23.1600.802@0.23.1600.802" timestamp="1621422357738" />
+    <state width="1231" height="211" key="GridCell.Tab.0.left" timestamp="1621442746622">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="243" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1621420950333" />
-    <state width="1558" height="211" key="GridCell.Tab.0.left/0.23.1600.802@0.23.1600.802" timestamp="1621421743096" />
-    <state width="1558" height="211" key="GridCell.Tab.0.right" timestamp="1621421743097">
-      <screen x="0" y="23" width="1600" height="802" />
+    <state width="1231" height="211" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1621442746622" />
+    <state width="1231" height="211" key="GridCell.Tab.0.left/0.23.1600.802@0.23.1600.802" timestamp="1621422357737" />
+    <state width="1231" height="211" key="GridCell.Tab.0.right" timestamp="1621442746624">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1558" height="243" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1621420950334" />
-    <state width="1558" height="211" key="GridCell.Tab.0.right/0.23.1600.802@0.23.1600.802" timestamp="1621421743097" />
+    <state width="1231" height="211" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1621442746624" />
+    <state width="1231" height="211" key="GridCell.Tab.0.right/0.23.1600.802@0.23.1600.802" timestamp="1621422357738" />
     <state x="83" y="62" key="SettingsEditor" timestamp="1621419749547">
       <screen x="0" y="23" width="1600" height="800" />
     </state>
     <state x="83" y="62" key="SettingsEditor/0.23.1600.800@0.23.1600.800" timestamp="1621419749547" />
-    <state x="192" y="169" key="Vcs.Push.Dialog.v2" timestamp="1621421451712">
+    <state x="192" y="169" key="Vcs.Push.Dialog.v2" timestamp="1621423065939">
       <screen x="0" y="23" width="1600" height="802" />
     </state>
-    <state x="192" y="169" key="Vcs.Push.Dialog.v2/0.23.1600.802@0.23.1600.802" timestamp="1621421451712" />
+    <state x="192" y="169" key="Vcs.Push.Dialog.v2/0.23.1600.802@0.23.1600.802" timestamp="1621423065939" />
     <state x="580" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621421401363">
       <screen x="0" y="23" width="1600" height="802" />
     </state>
