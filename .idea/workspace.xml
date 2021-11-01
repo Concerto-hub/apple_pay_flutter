@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="">
+    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="Updated Flutter Version from v2.7 to v2.12 with v0.0.7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftApplePayFlutterPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftApplePayFlutterPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/apple_pay_flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/apple_pay_flutter.podspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635768073750</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated Flutter Version from v2.7 to v2.12 with v0.0.7">
+      <created>1635768247692</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635768247692</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +148,7 @@
     <MESSAGE value="Updated Flutter Version from v2.7 to v2.12" />
     <MESSAGE value="Updated Flutter Version from v2.7 to v2.12 pubspec" />
     <MESSAGE value="Updated Flutter Version from v2.7 to v2.12 pubspec.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Flutter Version from v2.7 to v2.12 pubspec.yaml" />
+    <MESSAGE value="Updated Flutter Version from v2.7 to v2.12 with v0.0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Flutter Version from v2.7 to v2.12 with v0.0.7" />
   </component>
 </project>

@@ -43,9 +43,9 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
             items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingcharge), type: type))
             items.append(PKPaymentSummaryItem(label: "SUBTOTAL", amount: NSDecimalNumber(floatLiteral: price), type: type))
 
-            totalPrice = price+shippingCharges
-            items.append(PKPaymentSummaryItem(label: "SubTotal", amount: NSDecimalNumber(floatLiteral: price), type: type))
-            items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingCharges), type: type))
+//             totalPrice = price+shippingCharges
+//             items.append(PKPaymentSummaryItem(label: "SubTotal", amount: NSDecimalNumber(floatLiteral: price), type: type))
+//             items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingCharges), type: type))
         }
 
         let total = PKPaymentSummaryItem(label: companyName , amount: NSDecimalNumber(floatLiteral:totalPrice), type: .final)
