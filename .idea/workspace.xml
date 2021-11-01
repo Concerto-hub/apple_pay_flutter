@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="Updated Flutter Version from v2.7 to v2.12">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    <list default="true" id="657e2dd5-df07-4c35-b7e9-21fe33c3e56c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635767626725</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated Flutter Version from v2.7 to v2.12 pubspec.yaml">
+      <created>1635767923413</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635767923413</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -124,6 +130,7 @@
     <MESSAGE value="Changes in Documentation for publish Shiping new" />
     <MESSAGE value="Updated Flutter Version from v2.7 to v2.12" />
     <MESSAGE value="Updated Flutter Version from v2.7 to v2.12 pubspec" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Flutter Version from v2.7 to v2.12 pubspec" />
+    <MESSAGE value="Updated Flutter Version from v2.7 to v2.12 pubspec.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Flutter Version from v2.7 to v2.12 pubspec.yaml" />
   </component>
 </project>
