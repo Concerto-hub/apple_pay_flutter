@@ -6,6 +6,7 @@ homepage: https://github.com/Concerto-hub/apple_pay_flutter
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
@@ -27,8 +28,8 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.apple_pay_flutter.apple_pay_flutter
-        pluginClass: ApplePayFlutterPlugin
+          package: com.apple_pay_flutter.apple_pay_flutter
+          pluginClass: ApplePayFlutterPlugin
       ios:
         pluginClass: ApplePayFlutterPlugin
 
