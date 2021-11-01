@@ -1,5 +1,8 @@
-## 0.0.6
+## 0.0.7
 * Updated Flutter Version to null safety
+
+## 0.0.6
+* Updated Shipping Charges in PaymentItems
 
 ## 0.0.5
 * Updated Shipping Charges in PaymentItems
