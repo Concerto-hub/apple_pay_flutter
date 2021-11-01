@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 class ApplePayFlutter {
   static const MethodChannel _channel =
-  const MethodChannel('apple_pay_flutter');
+      const MethodChannel('apple_pay_flutter');
 
   static Future<dynamic> makePayment({
     @required String countryCode,
@@ -17,7 +17,7 @@ class ApplePayFlutter {
     @required String customerName,
     @required String customerEmail,
     @required String companyName,
-    @required double shippingCharges,
+
   }) async {
     // Assert checks for validating null references in the parameters
     assert(countryCode != null);
@@ -27,7 +27,7 @@ class ApplePayFlutter {
     assert(customerEmail != null);
     assert(customerName != null);
     assert(companyName != null);
-    assert(shippingCharges != null);
+
 
     // Create a argument json to be send to ApplePlay swift function
     final Map<String, Object> args = <String, dynamic>{
@@ -36,12 +36,12 @@ class ApplePayFlutter {
       'countryCode': countryCode,
       'currencyCode': currencyCode,
       'paymentItems':
-      paymentItems.map((PaymentItem item) => item._toMap()).toList(),
+          paymentItems.map((PaymentItem item) => item._toMap()).toList(),
       'merchantIdentifier': merchantIdentifier,
       'customerEmail': customerEmail,
       'customerName': customerName,
       'companyName':companyName,
-      'shippingCharges':shippingCharges,
+
     };
 
     // Check if user is having real iOS device
@@ -60,16 +60,19 @@ class ApplePayFlutter {
 class PaymentItem {
   final String label;
   final double amount;
+  final double shippingcharge;
 
-  PaymentItem({@required this.label, @required this.amount}) {
+  PaymentItem({@required this.label, @required this.amount, @required this.shippingcharge}) {
     assert(this.label != null);
     assert(this.amount != null);
+    assert(this.shippingcharge != null);
   }
 
   Map<String, dynamic> _toMap() {
     Map<String, dynamic> map = new Map();
     map["label"] = this.label;
     map["amount"] = this.amount;
+    map["shippingcharge"] = this.shippingcharge;
     return map;
   }
 }

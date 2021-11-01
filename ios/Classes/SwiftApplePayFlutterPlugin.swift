@@ -32,15 +32,20 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         guard let companyName = arguments["companyName"] as? String else {return}
         guard let paymentItems = arguments["paymentItems"] as? [NSDictionary] else {return}
         guard let merchantIdentifier = arguments["merchantIdentifier"] as? String else {return}
-        guard let shippingCharges = arguments["shippingCharges"] as? Double else {return}
 
         for dictionary in paymentItems {
             guard let label = dictionary["label"] as? String else {return}
             guard let price = dictionary["amount"] as? Double else {return}
+            guard let shippingcharge = dictionary["shippingcharge"] as? Double else {return}
             let type = PKPaymentSummaryItemType.final
 
-            totalPrice += price
+            totalPrice = price+shippingcharge
+            items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingcharge), type: type))
+            items.append(PKPaymentSummaryItem(label: "SUBTOTAL", amount: NSDecimalNumber(floatLiteral: price), type: type))
+
+            totalPrice = price+shippingCharges
             items.append(PKPaymentSummaryItem(label: "SubTotal", amount: NSDecimalNumber(floatLiteral: price), type: type))
+            items.append(PKPaymentSummaryItem(label: "SHIPPING", amount: NSDecimalNumber(floatLiteral: shippingCharges), type: type))
         }
 
         let total = PKPaymentSummaryItem(label: companyName , amount: NSDecimalNumber(floatLiteral:totalPrice), type: .final)

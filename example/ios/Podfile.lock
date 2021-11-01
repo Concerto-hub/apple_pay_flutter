@@ -1,5 +1,5 @@
 PODS:
-  - apple_pay_flutter (0.0.1):
+  - apple_pay_flutter (0.0.3):
     - Flutter
   - Flutter (1.0.0)
 
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  apple_pay_flutter: 7e97b775270808a46dfacf7d96959ef969b59b14
+  apple_pay_flutter: dec3bdf834fb8868edfc737dfb9f89eaa32d6b7c
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
