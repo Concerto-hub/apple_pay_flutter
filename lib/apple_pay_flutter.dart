@@ -9,14 +9,14 @@ class ApplePayFlutter {
       const MethodChannel('apple_pay_flutter');
 
   static Future<dynamic> makePayment({
-    @required String countryCode,
-    @required String currencyCode,
-    @required List<PaymentNetwork> paymentNetworks,
-    @required String merchantIdentifier,
-    @required List<PaymentItem> paymentItems,
-    @required String customerName,
-    @required String customerEmail,
-    @required String companyName,
+    required String countryCode,
+    required String currencyCode,
+    required List<PaymentNetwork> paymentNetworks,
+    required String merchantIdentifier,
+    required List<PaymentItem> paymentItems,
+    required String customerName,
+    required String customerEmail,
+    required String companyName,
 
   }) async {
     // Assert checks for validating null references in the parameters
@@ -30,7 +30,7 @@ class ApplePayFlutter {
 
 
     // Create a argument json to be send to ApplePlay swift function
-    final Map<String, Object> args = <String, dynamic>{
+    final Map<String, dynamic> args = <String, dynamic>{
       'paymentNetworks':
       paymentNetworks.map((item) => item.toString().split('.')[1]).toList(),
       'countryCode': countryCode,
@@ -62,7 +62,7 @@ class PaymentItem {
   final double amount;
   final double shippingcharge;
 
-  PaymentItem({@required this.label, @required this.amount, @required this.shippingcharge}) {
+  PaymentItem({required this.label, required this.amount, required this.shippingcharge}) {
     assert(this.label != null);
     assert(this.amount != null);
     assert(this.shippingcharge != null);

@@ -1,3 +1,6 @@
+## 0.0.6
+* Updated Flutter Version to null safety
+
 ## 0.0.5
 * Updated Shipping Charges in PaymentItems
 
