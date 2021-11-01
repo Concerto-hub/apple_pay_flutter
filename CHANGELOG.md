@@ -1,3 +1,6 @@
+## 0.0.8
+* Updated Flutter Version to null safety
+
 ## 0.0.7
 * Updated Flutter Version to null safety
 
