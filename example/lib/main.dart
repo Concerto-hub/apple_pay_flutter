@@ -67,7 +67,7 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Waiting for Apple Pay modal.'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Call payment'),
               onPressed: () => makePayment(),
             )

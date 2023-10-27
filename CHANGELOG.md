@@ -1,3 +1,7 @@
+## 0.0.9
+* Updated Flutter Version to Dart SDK compatible
+
+
 ## 0.0.8
 * Updated Flutter Version to null safety
 
