@@ -6,7 +6,7 @@ homepage: https://github.com/Concerto-hub/apple_pay_flutter
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
-
+  flutter: ">=1.12.0"
 dependencies:
   flutter:
     sdk: flutter

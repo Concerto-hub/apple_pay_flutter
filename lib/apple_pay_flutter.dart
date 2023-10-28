@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/services.dart';
 
 class ApplePayFlutter {
@@ -20,13 +20,6 @@ class ApplePayFlutter {
 
   }) async {
     // Assert checks for validating null references in the parameters
-    assert(countryCode != null);
-    assert(currencyCode != null);
-    assert(paymentItems != null);
-    assert(merchantIdentifier != null);
-    assert(customerEmail != null);
-    assert(customerName != null);
-    assert(companyName != null);
 
 
     // Create a argument json to be send to ApplePlay swift function
@@ -62,11 +55,8 @@ class PaymentItem {
   final double amount;
   final double shippingcharge;
 
-  PaymentItem({required this.label, required this.amount, required this.shippingcharge}) {
-    assert(this.label != null);
-    assert(this.amount != null);
-    assert(this.shippingcharge != null);
-  }
+  PaymentItem({required this.label, required this.amount, required this.shippingcharge});
+
 
   Map<String, dynamic> _toMap() {
     Map<String, dynamic> map = new Map();
