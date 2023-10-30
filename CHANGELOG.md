@@ -1,3 +1,6 @@
+## 1.0.0
+* Updated Flutter version and  Dart SDK compatible
+
 ## 0.0.9
 * Updated Flutter Version to Dart SDK compatible
 
