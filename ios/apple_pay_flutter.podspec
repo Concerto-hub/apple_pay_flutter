@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'apple_pay_flutter'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Apple Pay Transaction .'
   s.description      = <<-DESC
 A new flutter plugin project for Apple Pay Transactions .

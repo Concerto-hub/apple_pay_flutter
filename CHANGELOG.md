@@ -1,3 +1,6 @@
+## 1.0.1
+* Updated Android Kotlin  version in plugin
+* 
 ## 1.0.0
 * Updated Flutter version and  Dart SDK compatible
 
