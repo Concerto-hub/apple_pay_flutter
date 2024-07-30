@@ -1,3 +1,7 @@
+## 1.0.2
+* Disabled Shipping Address in Payment Items Sheet
+*
+
 ## 1.0.1
 * Updated Android Kotlin  version in plugin
 * 

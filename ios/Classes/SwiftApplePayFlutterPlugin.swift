@@ -62,7 +62,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
         }
 
         parameters["paymentNetworks"] = payments
-        parameters["requiredShippingContactFields"] = [PKContactField.name, PKContactField.postalAddress] as Set
+       // parameters["requiredShippingContactFields"] = [PKContactField.name, PKContactField.postalAddress] as Set
         parameters["merchantCapabilities"] = PKMerchantCapability.capability3DS // optional
 
         parameters["merchantIdentifier"] = merchantIdentifier
@@ -117,7 +117,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
 
     func makePaymentRequest(parameters: NSDictionary, authCompletion: @escaping AuthorizationCompletion, authControllerCompletion: @escaping AuthorizationViewControllerDidFinish) {
         guard let paymentNetworks               = parameters["paymentNetworks"]                 as? [PKPaymentNetwork] else {return}
-        guard let requiredShippingContactFields = parameters["requiredShippingContactFields"]   as? Set<PKContactField> else {return}
+       // guard let requiredShippingContactFields = parameters["requiredShippingContactFields"]   as? Set<PKContactField> else {return}
         let merchantCapabilities : PKMerchantCapability = parameters["merchantCapabilities"]    as? PKMerchantCapability ?? .capability3DS
 
         guard let merchantIdentifier            = parameters["merchantIdentifier"]              as? String else {return}
@@ -136,7 +136,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
             pkrequest.countryCode = countryCode
             pkrequest.currencyCode = currencyCode
             pkrequest.supportedNetworks = paymentNetworks
-            pkrequest.requiredShippingContactFields = requiredShippingContactFields
+           // pkrequest.requiredShippingContactFields = requiredShippingContactFields
             pkrequest.merchantCapabilities = merchantCapabilities
 
             pkrequest.paymentSummaryItems = paymentSummaryItems
