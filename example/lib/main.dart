@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           PaymentNetwork.amex,
           PaymentNetwork.mada
         ],
-        merchantIdentifier: "merchant.demo.tech.demoApplePayId",
+        merchantIdentifier: "merchant.sa.urwayphp",
         paymentItems: paymentItems,
         customerEmail: "demo.user@business.com",
         customerName: "Demo User",

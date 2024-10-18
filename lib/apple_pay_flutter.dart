@@ -36,7 +36,7 @@ class ApplePayFlutter {
       'companyName':companyName,
 
     };
-
+    print(args);
     // Check if user is having real iOS device
     if (Platform.isIOS) {
       // To call apple pay method channel interface to show payment sheet & initiate payment

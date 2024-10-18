@@ -1,3 +1,8 @@
+## 1.0.3
+* Upgraded Android Gradle Version to 8.5.2
+*
+
+
 ## 1.0.2
 * Disabled Shipping Address in Payment Items Sheet
 *
@@ -11,7 +16,7 @@
 ## 0.0.9
 * Updated Flutter Version to Dart SDK compatible
 
-
+ssss
 ## 0.0.8
 * Updated Flutter Version to null safety
 

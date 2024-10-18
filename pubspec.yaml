@@ -1,6 +1,6 @@
 name: apple_pay_flutter
 description: Apple Pay (payment and digital wallet service by Apple Inc) to Flutter.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/Concerto-hub/apple_pay_flutter
 
 
@@ -14,6 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

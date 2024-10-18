@@ -140,7 +140,12 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
             pkrequest.merchantCapabilities = merchantCapabilities
 
             pkrequest.paymentSummaryItems = paymentSummaryItems
-
+print("Merchant Identifier: \(pkrequest.merchantIdentifier)")
+print("Country Code: \(pkrequest.countryCode)")
+print("Currency Code: \(pkrequest.currencyCode)")
+print("Supported Networks: \(pkrequest.supportedNetworks)")
+print("Merchant Capabilities: \(pkrequest.merchantCapabilities)")
+print("Payment Summary Items: \(pkrequest.paymentSummaryItems)")
             let authorizationViewController = PKPaymentAuthorizationViewController(paymentRequest: pkrequest)
 
             if let viewController = authorizationViewController {
