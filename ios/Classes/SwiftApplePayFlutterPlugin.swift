@@ -10,7 +10,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
     var authorizationCompletion : AuthorizationCompletion!
     var authorizationViewControllerDidFinish : AuthorizationViewControllerDidFinish!
     var pkrequest = PKPaymentRequest()
-    var flutterResult: FlutterResult!;
+    var flutterResult: FlutterResult!
     
     
     public static func register(with registrar: FlutterPluginRegistrar) {
@@ -101,7 +101,7 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
                 case .mastercard: return PKPaymentNetwork.masterCard
                 case .visa: return PKPaymentNetwork.visa
                 case .amex: return PKPaymentNetwork.amex
-                case .mada: if #available(iOS 12.1.1, *) {
+            case .mada: if #available(iOS 12.1.1, *) {
                     return PKPaymentNetwork.mada
                 }else{
                     return PKPaymentNetwork.amex
@@ -140,12 +140,12 @@ public class SwiftApplePayFlutterPlugin: NSObject, FlutterPlugin, PKPaymentAutho
             pkrequest.merchantCapabilities = merchantCapabilities
 
             pkrequest.paymentSummaryItems = paymentSummaryItems
-print("Merchant Identifier: \(pkrequest.merchantIdentifier)")
-print("Country Code: \(pkrequest.countryCode)")
-print("Currency Code: \(pkrequest.currencyCode)")
-print("Supported Networks: \(pkrequest.supportedNetworks)")
-print("Merchant Capabilities: \(pkrequest.merchantCapabilities)")
-print("Payment Summary Items: \(pkrequest.paymentSummaryItems)")
+            print("Merchant Identifier: \(pkrequest.merchantIdentifier)")
+            print("Country Code: \(pkrequest.countryCode)")
+            print("Currency Code: \(pkrequest.currencyCode)")
+            print("Supported Networks: \(pkrequest.supportedNetworks)")
+            print("Merchant Capabilities: \(pkrequest.merchantCapabilities)")
+            print("Payment Summary Items: \(pkrequest.paymentSummaryItems)")
             let authorizationViewController = PKPaymentAuthorizationViewController(paymentRequest: pkrequest)
 
             if let viewController = authorizationViewController {

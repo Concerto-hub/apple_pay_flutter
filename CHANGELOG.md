@@ -1,3 +1,7 @@
+## 1.0.4
+* Upgraded Android Gradle Version to 8.7.3
+*
+
 ## 1.0.3
 * Upgraded Android Gradle Version to 8.5.2
 *
